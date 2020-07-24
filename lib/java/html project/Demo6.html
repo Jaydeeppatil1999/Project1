@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+	function demo()
+	{
+		x=document.getElementById('s1').value;
+		
+		document.getElementById('b1').style.background=x;
+	}
+</script>
+</head>
+<body id="b1">
+	<Select id="s1" onchange="demo()">
+		<option>red</option>
+		<option>blue</option>
+		<option>green</option>
+		<option>orange</option>
+	</Select>
+</body>
+</html>

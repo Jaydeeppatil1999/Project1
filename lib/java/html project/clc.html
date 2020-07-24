@@ -1,0 +1,149 @@
+<html>
+<head>
+<style type="text/css">
+	<!-- #body -->
+	<!-- { -->
+		<!-- margin-top:130px; -->
+	<!-- } -->
+	body
+	{
+		background-image:url("jay11.jpg");
+		background-repeat:no-repeat;
+		background-size:100%;
+		margin-top:40;
+	}
+	#b
+	{
+		width:130%;
+		height:40px;
+		font-size:15px;
+		border-radius:10px;
+		background-image:url("jay5.jpg");
+		box-shadow:5px 5px 5px black;
+		margin-left:2px;
+	}
+	
+	#t
+	{
+		width:130%;
+		height:50px;
+		font-size:20px;
+		color:white;
+		border-radius:10px;
+		<!-- background-image:url("jay5.jpg"); -->
+		box-shadow:5px 5px 5px white;
+		background-color:black;
+		
+	}
+	
+	#t1
+	{
+	
+		width:25%;
+		height:300px;
+		margin:80px;
+		<!-- border-style:dotted; -->
+		border-color:rgba(0,0,0,0.5);
+		border-radius:20px;
+		color:black;
+		font-style:italic;
+		
+		box-shadow:5px 5px 5px white;
+		background-image:url("jay2.jpg");
+	}
+</style>
+<script type="text/javascript">
+	function myclick(a)
+	{
+		myform.display.value+=a;
+	}
+	function sin()
+	{
+		myform.display.value=Math.sin(myform.display.value);
+	}
+	function cos()
+	{
+		myform.display.value=Math.cos(myform.display.value);
+	}
+	function tan()
+	{
+		myform.display.value=Math.tan(myform.display.value);
+	}
+	
+	function power()
+	{
+		myform.display.value=Math.pow(myform.display.value,2);
+	}
+	
+	function power()
+	{
+		myform.display.value=Math.pow(myform.display.value,1/2);
+	}
+	function backspace()
+	{
+		var prevalue=myform.display.value;
+		myform.display.value=prevalue.substr(0,prevalue.length-1);
+	}
+	function ac()
+	{
+		myform.display.value=" ";
+	}
+	function equal()
+	{
+		myform.display.value=eval(myform.display.value);
+	}
+</script>
+</head>
+<body id="body">
+<center>
+	<form name="myform"> 
+		<table id="t1" bgcolor="gray"cellpadding="8px" cellspacing="10px">
+			<tr><th colspan="4"><input type="text" id="t" name="display" ></th></tr>
+		
+		
+			<tr>
+			<td><input type="button" id="b" name="btnsin" value="sin" onclick="sin()"></td>
+			<td><input type="button" id="b" name="btncos" value="cos" onclick="cos()"></td>
+			<td><input type="button" id="b" name="btntan" value="tan" onclick="tan"></td>
+			<td><input type="button" id="b"name="btnpower" value="^" onclick="power()"></td>
+			<td><input type="button" id="b"name="btnrt" value="Rt" onclick="rt()"></td>
+			</tr>
+		
+			<tr>
+			<td><input type="button" name="btn7"id="b" value="7" onclick="myclick('7')"></td>
+			<td><input type="button" name="btn8"id="b" value="8" onclick="myclick('8')"></td>
+			<td><input type="button" name="btn9" id="b"value="9" onclick="myclick('9')"></td>
+			<td><input type="button" name="btnDel"id="b" value="Del" onclick="backspace()"></td>
+			<td><input type="button" name="btnac" id="b"value="Ac" onclick="ac()"></td>
+			</tr>
+			
+			<tr>
+			<td><input type="button" name="btn4" value="4"id="b" onclick="myclick('4')"></td>
+			<td><input type="button" name="btn5" value="5"id="b" onclick="myclick('5')"></td>
+			<td><input type="button" name="btn6" value="6" id="b"onclick="myclick('6')"></td>
+			<td><input type="button" name="btnsub" value="-" id="b"id="b"onclick="myclick('-')"></td>
+			<td><input type="button" name="btnadd" value="+" id="b"onclick="myclick('+')"></td>
+			</tr>
+			
+			<tr>
+			<td><input type="button" name="btn1" value="1" id="b"onclick="myclick('1')"></td>
+			<td><input type="button" name="btn2" value="2" id="b"onclick="myclick('2')"></td>
+			<td><input type="button" name="btn3" value="3" id="b"onclick="myclick('3')"></td>
+			<td><input type="button" name="btnsub" value="*" id="b"onclick="myclick('*')"></td>
+			<td><input type="button" name="btndiv" value="/" id="b"onclick="myclick('/')"></td>
+			</tr>
+			
+			
+			<tr>
+			<td><input type="button" name="btnzero" value="0" id="b"onclick="myclick('0')"></td>
+			<td><input type="button" name="btnzero2" value="00" id="b"onclick="myclick('00')"></td>
+			<td><input type="button" name="btndot" value="." id="b"onclick="myclick('.')"></td>
+			<td><input type="button" name="btnnm" value="*" id="b"onclick="myclick('*')"></td>
+			<td><input type="button" name="btnequal" value="="id="b" onclick="equal()"></td>
+			</tr>
+			
+		</table>
+	</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<html>
+#mymenu
+{
+	border-color:rgba(0,0,0,0.5);
+	border-radius:5px 5px 5px 5px;
+	color:white;
+	margin:8px;
+	padding:15px;	
+}
+
+#mymenu ul li
+{
+	background-color:rgba(0,0,0,0.5);
+	display:inline-block;
+	border-radius:5px 5px 5px 5px;
+	color:white;
+	float:right;
+	padding:15px;
+	text-align:right;
+}
+
+#mymenu ul li:hover
+{
+	background:linear-gradient(orange,red);
+	border-radius:5px 5px 5px 5px;
+	color:white;
+}
+
+#data
+{
+	margin-top:150;
+}
+
+#t1
+{
+	box-shadow: 5px 5px 5px white;
+	
+}
+
+#sidebar
+{
+	width:70%;
+	height:400px;
+	background-color:rgba(0,0,0,0.5);
+	/* float:right; */
+	margin-left:800px;
+	margin-top:15px;
+	margin-right:15px;
+	border-radius:15px;
+	color:white;
+	font-size:22px;
+	text-align:center;
+}
+.B
+{
+	width:90;
+	height:35;
+	background:linear-gradient(red,blue);
+	color:white;
+	box-shadow:5px 5px 5px black;
+	border-radius:8px;
+}
+
+.B:hover
+{
+	background:linear-gradient(orange,red);
+	box-shadow:5px 5px 5px black;
+	color:white;
+	border-radius:8px;	
+}
+
+#table
+{
+	background-color:rgba(0,0,0,0.3);
+}
+
+a:link
+{
+	color:white;
+}
+
+#data1
+{
+	color:white;
+}
+
+a:visited
+{
+	color:white;
+}
+
+#data1
+{
+	width:45%;
+	height:400;
+	margin-top:70px;
+	float:left;
+	margin-left:30px;
+	border-radius:8px;
+	background-color:rgba(0,0,0,0.3);
+}
+
+#data2
+{
+	width:45%;
+	height:170px;
+	background-color:rgba(255,0,0,0.5);
+	margin-right:15px;
+	margin-left:15px;
+	margin-bottom:15px;
+	margin-top:15px;
+	text-align:left;
+	float:left;
+	border-radius:8px;
+}
+
+#data3
+{
+	background-color:rgba(0,255,0,0.5);
+	text-align:center;
+	font-size:20px;
+	color:white;
+	border-radius:15px;
+}
+
+#footer
+{
+	width:230%;
+	height:110px;
+	background-color:rgba(0,0,0,0.5);
+	margin-top:90px;
+	border-radius:12px;
+}
+
+#footer1
+{
+	width:20%;
+	height:100px;
+	border-radius:10px;
+	margin-left:43px;
+	margin-top:10px;
+	float:left;
+	background-color:rgba(255,0,0,0.5);
+}
+
+#sidebar
+{
+	width:45%;
+	height:170px;
+	background-color:rgba(255,0,0,0.5);
+	margin-right:15px;
+	margin-left:225px;
+	margin-bottom:15px;
+	margin-top:70px;
+	text-align:left;
+	float:left;
+	border-radius:8px;
+}
+
+
+</html>

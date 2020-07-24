@@ -1,0 +1,122 @@
+
+#body
+{
+    
+  background-image:url("jay8.jpg");  
+  background-size:100%;
+  background-repeat:no-repeat;
+}
+#mymenu
+{
+    background-color:black;
+    font-size: 20px;
+    color:white;
+    margin:-8px;
+    text-align:right;
+}
+#mymenu ul li
+{
+    background-color:rgba(0,0,0,0.5);
+    display: inline-block;
+    padding:10px;
+    color:white;
+    border-radius:7px;
+    float:right; 
+}
+#mymenu ul li:hover
+{
+    background:linear-gradient(orange,red);
+    color:white;
+    border-radius:7px;
+}
+a:link
+{
+    color: white;
+}
+#data1
+{
+    color:white;
+}
+a:visited
+{
+    color:white;
+}
+.table
+{
+    width: 25%;
+    height: 250px;
+    
+   top:50%;
+   left:50%;
+   transform:translate(150%,90%);
+    background-image:url("jay9.jpg");
+    box-shadow:5px 5px 5px black;
+    border-radius:5px;
+}
+.table h1
+{
+    font-family:calisto mt;
+    color:white;
+}
+#t
+{
+   width:90%;
+   height:25px; 
+   border-radius:7px;
+   box-shadow:5px 5px 5px black; 
+}
+#b
+{
+    width:45%;
+    height: 35px;
+    box-shadow:5px 5px 5px black;
+    border-radius:5px;
+    font-size: 15px;
+    background:linear-gradient(orange,blue);
+    color:white;
+}
+#b:hover
+{
+    background:linear-gradient(red,orange);
+    color:white; 
+}
+
+.tablee
+{
+    width: 25%;
+    height: 350px;
+    
+   top:30%;
+   left:30%;
+   transform:translate(150%,90%);
+    background-image:url("jay9.jpg");
+    box-shadow:5px 5px 5px black;
+    border-radius:5px;
+}
+.tablee h1
+{
+    font-family:calisto mt;
+    color:white;
+}
+#t
+{
+   width:90%;
+   height:25px; 
+   border-radius:7px;
+   box-shadow:5px 5px 5px black; 
+}
+#b
+{
+    width:45%;
+    height: 35px;
+    box-shadow:5px 5px 5px black;
+    border-radius:5px;
+    font-size: 15px;
+    background:linear-gradient(orange,blue);
+    color:white;
+}
+#b:hover
+{
+    background:linear-gradient(red,orange);
+    color:white; 
+}

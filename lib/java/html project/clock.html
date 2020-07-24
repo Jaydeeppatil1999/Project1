@@ -1,0 +1,53 @@
+<html>
+<head>
+<style type="text/css">
+	p
+	{
+		background-color:red;
+		color:white;
+	}
+	font
+	{
+		background-color:black;
+	}
+</style>
+<script type="text/javascript">
+	l=1;
+	function demo()
+	{
+		d=new Date();
+		if(l==1)
+		{
+		document.getElementById('h').innerHTML=d.getHours();
+		document.getElementById('n').style.color="black";
+		document.getElementById('m').innerHTML=d.getMinutes();
+		document.getElementById('k').style.color="black";
+		document.getElementById('s').innerHTML=d.getSeconds();
+		l++;
+		}
+		else
+		{
+		document.getElementById('h').innerHTML=d.getHours();
+		document.getElementById('n').style.color="white";
+		document.getElementById('m').innerHTML=d.getMinutes();
+		document.getElementById('k').style.color="white";
+		document.getElementById('s').innerHTML=d.getSeconds();
+		l=1;
+		}
+		
+		setTimeout("demo()",500);
+	}
+</script>
+</head>
+	<body onload="demo()">
+		<center>
+		<p>
+			<font id="h"> </font>
+			<font id="n">:</font>
+			<font id="m"> </font>
+			<font id="k">:</font>
+			<font id="s"> </font>
+		</p>
+		</center>
+	</body>
+</html>

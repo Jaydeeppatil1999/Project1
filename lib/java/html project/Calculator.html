@@ -1,0 +1,156 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+	body
+	{
+		background-image:url("jay11.jpg");
+		background-repeat:no-repeat;
+		background-size:100%;
+		margin-top:40;
+	}
+	#b1
+	{
+		width:80%;
+		height:30px;
+		font-size:20px;
+		border-radius:50px;
+		margin-left:7px;
+		color:white;
+		
+		background-image:url("jay8.jpg");
+	}
+	.t
+	{
+		margin:80px;
+		<!-- border-style:dotted; -->
+		border-color:black;
+		border-radius:20px;
+		color:black;
+		font-style:italic;
+		
+		box-shadow:5px 5px 5px white;
+		background-image:url("jay2.jpg");
+	}
+	#t1
+	{
+		width:110%;
+		height:35px;
+		color:black;
+		font-size:25px;
+		margin-left:13px;
+		margin-top:8px;
+		border-radius:20px;
+		box-shadow:5px 5px 5px black;
+	}
+	#c
+	{
+		color:black;
+		font-size:30px;
+		font-style:bold;
+		background-color:cyan;
+		border-radius:20px;
+		
+	}
+	#m
+	{
+		color:black;
+		font-size:35px;
+		margin-top:5px;
+		border-radius:20px;
+		background:linear-gradient(orange,white,green);
+	}
+	</style>
+<script type="text/javascript">
+	function myclick(a)
+	{
+		myform.display.value+=a;
+	}
+	function eualto()
+	{
+		myform.display.value=eval(myform.display.value);
+	}
+	function ac()
+	{
+		myform.display.value=" ";
+	}
+	function backspace()
+	{
+		var prevalue=myform.display.value;
+		myform.display.value=prevalue.substr(0,prevalue.length-1);
+	}
+	function fnsin()
+	{
+		myform.display.value=Math.sin(myform.display.value);
+	}
+	function fncos()
+	{
+		myform.display.value=Math.cos(myform.display.value);
+	}
+	function fntan()
+	{
+		myform.display.value=Math.tan(myform.display.value);
+	}
+	function square()
+	{
+		myform.display.value=Math.pow(myform.display.value,2);
+	}
+	function squarert()
+	{
+		myform.display.value=Math.pow(myform.display.value,1/2);
+	}
+</script>
+</head>
+<body  id="body">
+<center>
+	<marquee id="m" width="650px">Welcome</marquee>
+	<form name="myform">
+	<table class="t" bgcolor="gray" cellpadding="7px" cellspacing="10" >
+	<caption id="c">Calculator</caption>
+		<tr>
+		<th colspan="4"><input type="text" name="display" id="t1" ></th>
+		</tr>
+	<tr>
+	
+		<br><td><input type="button" id="b1" name="btnsin" value="sin" onclick="fnsin()"></td>
+		<td><input type="button" id="b1" name="btncos" value="cos" onclick="fncos()"></td>
+		<td><input type="button" id="b1" name="btntan" value="tan" onclick="fntan()"></td>
+		<td><input type="button" id="b1" name="btnsqr" value="^" onclick="square()"></td>
+		<td><input type="button" id="b1" name="btnsqrt" value="Rt" onclick="squarert()"></td>
+	</tr>
+	
+	<tr>
+		<td><input type="button" id="b1" name="btn9" value="7" onclick="myclick('7')"></td>
+		<td><input type="button" id="b1" name="btn8" value="8" onclick="myclick('8')"></td>
+		<td><input type="button" id="b1" name="btn7" value="9" onclick="myclick('9')"></td>
+		
+		<td><input type="button" id="b1" name="btndel" value="Del" onclick="backspace()"></td>
+		<td><input type="button" id="b1" name="btnac" value="Ac" onclick="ac()"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="b1" name="btn4" value="4" onclick="myclick('4')"></td>
+		<td><input type="button" id="b1" name="btn5" value="5" onclick="myclick('5')"></td>
+		<td><input type="button" id="b1" name="btn6" value="6" onclick="myclick('6')"></td>
+		<td><input type="button" id="b1" name="btnsub" value="-" onclick="myclick('-')"></td>
+		<td><input type="button" id="b1" name="btnadd" value="+" onclick="myclick('+')"></td>
+	</tr>
+	
+	<tr>
+		<td><input type="button" id="b1" name="btn1" value="1" onclick="myclick('1')"></td>
+		<td><input type="button" id="b1" name="btn2" value="2" onclick="myclick('2')"></td>
+		<td><input type="button" id="b1" name="btn3" value="3" onclick="myclick('3')"></td>
+		<td><input type="button" id="b1" name="btnmul" value="*" onclick="myclick('*')"></td>
+		<td><input type="button" id="b1" name="btndiv" value="/" onclick="myclick('/')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="b1" name="btnzero" value="0" onclick="myclick('0')"></td>
+		<td><input type="button" id="b1" name="btntwozero" value="00" onclick="myclick('00')"></td>
+		<td><input type="button" id="b1" name="btnpoint" value="." onclick="myclick('.')"></td>
+		<td><input type="button" id="b1" name="btnnm" value="*" onclick="myclick('*')"></td>
+		<td><input type="button" id="b1" name="btnequal" value="=" onclick="eualto()"></td>
+	</tr>
+	</table>
+	</form>
+</center>
+</body>
+</html>

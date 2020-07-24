@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+	function demo()
+	{
+		x=document.getElementById('t1').value;
+		y=document.getElementById('t2').value;
+		
+		a=parseInt(x);
+		b=parseInt(y);
+		c=a+b;
+		
+		document.getElementById('t3').value=c;
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="t1"><br>
+	<input type="text" id="t2"><br>
+	
+	<input type="button" value="Click" onclick="demo()"><br>
+	
+	<input type="text" id="t3"><br>
+</body>
+</html>

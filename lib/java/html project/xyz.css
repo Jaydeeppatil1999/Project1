@@ -1,0 +1,78 @@
+<html>
+#mymenu
+{
+	color:white;
+	margin:8px;
+	padding 15px;
+}
+#mymenu ul li
+{
+	
+	display:inline-block;
+	background-color:rgba(0,0,0,0.5);
+	float:right;
+	text-align:right;
+	color:white;	
+	padding:15px;
+}
+#mymenu ul li:hover
+{
+	background:linear-gradient(orange,red);
+	padding:15px;
+	color:white;	
+}
+#data1
+{
+	width:77%;
+	height:200px;
+	background-color:rgba(0,0,0,0.5);
+	margin-top:50px;
+	float:left;
+	
+}
+a:link
+{
+	color:white;
+}
+#data1
+{
+	color:white;
+}
+a:visited
+{
+	color:white;
+}
+
+#data2
+{
+	width:50%;
+	height:430px;
+	background-color:rgba(0,0,0,0.5);
+	margin-top:80px;
+	margin-left:15px;
+	float:left;
+	
+}
+
+#footer
+{
+	width:190%;
+	height:140px;
+	background-color:rgba(0,0,0,0.5);
+	margin-top:440px;
+	margin-left:15px;
+	float:left;
+	
+}
+
+#sidebar
+{
+	width:50%;
+	height:450px;
+	background-color:rgba(0,0,0,0.5);
+	margin-top:80px;
+	margin-left:805px;
+	float:right;
+	
+}
+</html>
